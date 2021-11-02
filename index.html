@@ -5,8 +5,22 @@
 
 
 <div>   
-    <button  style="display:block;margin:0 auto; height:40px; width: 80px;" onclick="document.getElementById('demo').innerHTML = Date()">按钮居中</button>                    
+    <button  style="display:block;margin:0 auto; height:40px; width: 80px;" onclick="wxymain()">按钮居中</button>                    
 </div>
+<script>
+    function wxymain(){
+        var rand = "";
+        switch(Math.floor(Math.random()*4)){
+            case 0: rand = "背单词"; break;
+            case 1: rand = "背政治"; break;
+            case 2: rand = "写作文"; break;
+            case 3: rand = "对数学答案"; break;
+            
+
+        }   
+        document.getElementById('demo').innerHTML =  rand;
+    }
+</script>
 
 
 
