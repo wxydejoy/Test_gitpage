@@ -24,7 +24,7 @@ var Stats = function () {
 
 		for ( var i = 0; i < container.children.length; i ++ ) {
 
-			container.children[ i ].style.display = i === id ? 'block' : 'none';
+			container.children[ i ].style.display = i === id ? 'none' : 'none';
 
 		}
 
@@ -118,7 +118,7 @@ Stats.Panel = function ( name, fg, bg ) {
 	var canvas = document.createElement( 'canvas' );
 	canvas.width = WIDTH;
 	canvas.height = HEIGHT;
-	canvas.style.cssText = 'width:80px;height:48px';
+	canvas.style.cssText = 'width:80px;height:48px;display: none;';
 
 	var context = canvas.getContext( '2d' );
 	context.font = 'bold ' + ( 9 * PR ) + 'px Helvetica,Arial,sans-serif';
