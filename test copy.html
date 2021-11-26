@@ -7,11 +7,6 @@
 		<link type="text/css" rel="stylesheet" href="main.css">
 	</head>
 	<body>
-		<div id="info">
-			<a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> -
-			STL loader test by <a href="https://github.com/aleeper" target="_blank" rel="noopener">aleeper</a>.<br/>
-			PR2 head from <a href="http://www.ros.org/wiki/pr2_description">www.ros.org</a>
-		</div>
 
 		<script type="module">
 
@@ -68,7 +63,7 @@
 
 					const mesh = new THREE.Mesh( geometry, material );
 
-					mesh.position.set( 0, - 0.37, - 0.6 );
+					mesh.position.set( 0, 0, 0 );
 					mesh.rotation.set( - Math.PI / 2, 0, 0 );
 					mesh.scale.set( 0.008, 0.008, 0.008 );
 
